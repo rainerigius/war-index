@@ -1,0 +1,123 @@
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © v3pa6ql
+
+//@version=5
+indicator("War Index (Approximated)")
+// <===> <--backtesting--> <===>
+i_from = input.time(defval = timestamp("01 Jan 2018 00:00 +0000"), title = "From")
+i_thru = input.time(defval = timestamp("01 Mar 2025 00:00 +0000"), title = "Thru")
+
+// <===> <--function--> <===>
+date() => time >= i_from and time <= i_thru
+
+percentagework(titcker) =>
+    // Recupero dei dati di chiusura per il ticker
+    tickclose = date() ? request.security(titcker, "D", close) : na
+    variazione_percentuale = (tickclose - tickclose[1]) / tickclose[1] * 100
+    variazione_percentuale
+
+percwor(asset) =>
+    var float valore_cumulativo = 1.0  // Parto da 1.0 per far crescere il valore
+
+    // Controllo che il valore tickclose sia disponibile e il controllo su date()
+    if (not na(asset) and not na(asset[1]))
+        // Calcolo della variazione percentuale
+        // Aggiorno il valore cumulativo moltiplicandolo per la variazione percentuale
+        valore_cumulativo := valore_cumulativo * (1 + asset / 100)
+    
+    valore_cumulativo
+
+LMT = percentagework("NYSE:LMT")
+NOC =  percentagework("NYSE:NOC")
+BA =  percentagework("NYSE:BA")
+RTX =  percentagework("NYSE:RTX")
+GD =  percentagework("NYSE:GD")
+BAESY =  percentagework("OTC:BAESY")
+LHX =  percentagework("NYSE:LHX")
+TXT =  percentagework("NYSE:TXT")
+HII =  percentagework("NYSE:HII")
+OSK =  percentagework("NYSE:OSK")
+LDOS =  percentagework("NYSE:LDOS")
+KTOS =  percentagework("NASDAQ:KTOS")
+SPR =  percentagework("NYSE:SPR")
+PSN =  percentagework("NYSE:PSN")
+CACI =  percentagework("NYSE:CACI")
+VSAT =  percentagework("NASDAQ:VSAT")
+
+count = 0.0
+value = 0.0
+avgvar = 0.0
+wri = 0.0
+
+if not na(LMT)
+    count := count + 1
+    value := value + LMT
+
+if not na(NOC)
+    count := count + 1
+    value := value + NOC
+
+if not na(BA)
+    count := count + 1
+    value := value + BA
+
+if not na(RTX)
+    count := count + 1
+    value := value + RTX
+
+if not na(GD)
+    count := count + 1
+    value := value + GD
+
+if not na(BAESY)
+    count := count + 1
+    value := value + BAESY
+
+if not na(LHX)
+    count := count + 1
+    value := value + LHX
+
+if not na(TXT)
+    count := count + 1
+    value := value + TXT
+
+if not na(HII)
+    count := count + 1
+    value := value + HII
+
+if not na(OSK)
+    count := count + 1
+    value := value + OSK
+
+if not na(LDOS)
+    count := count + 1
+    value := value + LDOS
+
+if not na(KTOS)
+    count := count + 1
+    value := value + KTOS
+
+if not na(SPR)
+    count := count + 1
+    value := value + SPR
+
+if not na(PSN)
+    count := count + 1
+    value := value + PSN
+
+if not na(CACI)
+    count := count + 1
+    value := value + CACI
+
+if not na(VSAT)
+    count := count + 1
+    value := value + VSAT
+
+avgvar := value / count
+wri := percwor(avgvar)
+
+SPXclose = percentagework("SP:SPX")
+SPX = percwor(SPXclose)
+
+plot(date() ? wri : na, color= color.red, title = "WRI")
+plot(date() ? SPX : na, color = color.blue, title = "SPX")
