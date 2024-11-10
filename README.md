@@ -1,140 +1,172 @@
-# 📈 War Index (Approximated) - Stock and Economic Overview
+# War Index (Approximated)
 
-## Overview
+![War Index Banner](https://example.com/banner-image.png)
 
-The **War Index (Approximated)** is a specialized TradingView Pine Script™ indicator developed by **RaineriGiuseppe**. This index aggregates performance metrics from a selection of major defense and aerospace companies, alongside significant economic indicators like the S&P 500 Index (SPX). By monitoring these pivotal stocks and indices, the War Index provides a comprehensive view of market trends, defense sector performance, and broader economic health. This detailed overview delves into each component of the War Index, highlighting their roles, significance, and impact on the financial markets.
+## Table of Contents
 
-## Key Components
+- [Introduction](#introduction)
+- [What is the War Index?](#what-is-the-war-index)
+- [Index Components](#index-components)
+  - [Lockheed Martin Corporation (LMT)](#lockheed-martin-corporation-lmt)
+  - [Northrop Grumman Corporation (NOC)](#northrop-grumman-corporation-noc)
+  - [Boeing Company (BA)](#boeing-company-ba)
+  - [Raytheon Technologies Corporation (RTX)](#raytheon-technologies-corporation-rtx)
+  - [General Dynamics Corporation (GD)](#general-dynamics-corporation-gd)
+  - [BAE Systems plc (BAESY)](#bae-systems-plc-baesy)
+  - [L3Harris Technologies, Inc. (LHX)](#l3harris-technologies-inc-lhx)
+  - [Textron Inc. (TXT)](#textron-inc-txt)
+  - [Huntington Ingalls Industries, Inc. (HII)](#huntington-ingalls-industries-inc-hii)
+  - [Oshkosh Corporation (OSK)](#oshkosh-corporation-osk)
+  - [Leidos Holdings, Inc. (LDOS)](#leidos-holdings-inc-ldos)
+  - [Kratos Defense & Security Solutions, Inc. (KTOS)](#kratos-defense--security-solutions-inc-ktos)
+  - [Spirit AeroSystems Holdings, Inc. (SPR)](#spirit-aerosystems-holdings-inc-spr)
+  - [Parsons Corporation (PSN)](#parsons-corporation-psn)
+  - [CACI International Inc (CACI)](#caci-international-inc-caci)
+  - [ViaSat, Inc. (VSAT)](#viasat-inc-vsat)
+- [Purpose of the War Index](#purpose-of-the-war-index)
+- [Comparison with the S&P 500](#comparison-with-the-sp-500)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
-### 1. **Defense and Aerospace Stocks**
+## Introduction
 
-The War Index comprises a curated list of prominent stocks primarily from the defense and aerospace sectors. These companies are integral to national security, technological innovation, and global trade, making their performance a reliable indicator of both industry health and broader economic conditions.
+Welcome to the **War Index (Approximated)** repository! This project aims to provide traders, investors, and analysts with a specialized financial indicator that tracks the performance of key defense and aerospace companies. By aggregating the percentage changes of selected stocks, the War Index offers insights into the defense sector's dynamics and its relationship with the broader market.
 
-#### a. **Lockheed Martin Corporation (NYSE: LMT)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Lockheed Martin is a global leader in aerospace, defense, and advanced technologies. Renowned for its role in producing fighter jets like the F-35 Lightning II, missile defense systems, and space exploration technologies, Lockheed Martin is pivotal in shaping modern defense capabilities.
-- **Significance:** As one of the largest defense contractors globally, Lockheed Martin's performance is closely tied to government defense spending and geopolitical developments.
+## What is the War Index?
 
-#### b. **Northrop Grumman Corporation (NYSE: NOC)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Northrop Grumman specializes in autonomous systems, cyber, C4ISR (Command, Control, Communications, Computers, Intelligence, Surveillance, and Reconnaissance), space, and strike capabilities. Their portfolio includes unmanned aerial vehicles (UAVs) and advanced defense electronics.
-- **Significance:** Northrop Grumman's innovations in defense technology make it a cornerstone in maintaining national security and technological superiority.
+The **War Index** is a custom financial indicator designed to approximate the collective performance of major defense and aerospace companies. It aggregates the daily percentage changes of selected stocks within the defense sector to provide a singular metric that reflects the overall health and trends of this industry. Additionally, the index is compared against the S&P 500 (SPX) to contextualize its performance relative to the broader market.
 
-#### c. **The Boeing Company (NYSE: BA)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Boeing is a leading manufacturer of commercial jetliners, defense, space, and security systems. Beyond commercial aviation, Boeing plays a crucial role in military aircraft production, missile systems, and space exploration missions.
-- **Significance:** Boeing's performance is a barometer for both the commercial aviation industry's health and defense sector dynamics.
+## Index Components
 
-#### d. **Raytheon Technologies Corporation (NYSE: RTX)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Formed by the merger of Raytheon Company and United Technologies Corporation, RTX is a major player in defense, civil government, and cybersecurity solutions. Their offerings include missile defense systems, aircraft engines, and advanced radar technologies.
-- **Significance:** RTX's diverse portfolio makes it a key indicator of technological advancements and defense spending trends.
+The War Index comprises the following 16 stocks, each representing a significant player in the defense and aerospace industries:
 
-#### e. **General Dynamics Corporation (NYSE: GD)**
-- **Sector:** Aerospace & Defense
-- **Overview:** General Dynamics provides a wide range of products and services, including business aviation, combat vehicles, weapons systems, IT services, and shipbuilding. Their subsidiaries, such as Gulfstream Aerospace, are leaders in luxury business jets.
-- **Significance:** General Dynamics' extensive involvement in both military and commercial sectors offers insights into defense contracts and commercial aerospace demand.
+### Lockheed Martin Corporation (LMT)
 
-#### f. **BAE Systems plc (OTC: BAESY)**
-- **Sector:** Aerospace & Defense
-- **Overview:** BAE Systems is a British multinational defense, security, and aerospace company. They produce naval ships, advanced electronics, and cybersecurity solutions, serving both government and commercial clients worldwide.
-- **Significance:** As one of the largest defense contractors in Europe, BAE Systems' performance reflects global defense expenditure and international security collaborations.
+**Ticker:** NYSE:LMT
 
-#### g. **L3Harris Technologies, Inc. (NYSE: LHX)**
-- **Sector:** Aerospace & Defense
-- **Overview:** L3Harris specializes in defense technology, including communication systems, electronic warfare, and space systems. Their solutions are critical for military operations and national security infrastructure.
-- **Significance:** L3Harris' focus on cutting-edge defense technologies makes it a key player in modern warfare and intelligence operations.
+Lockheed Martin is a global aerospace, defense, security, and advanced technologies company. Renowned for its role in developing the F-35 fighter jet and various missile defense systems, Lockheed Martin is a cornerstone of the U.S. defense industry.
 
-#### h. **Textron Inc. (NYSE: TXT)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Textron is a diversified company with interests in aviation, defense, and industrial products. They manufacture military aircraft, unmanned systems, and commercial helicopters, among other products.
-- **Significance:** Textron's diverse product range provides stability and reflects trends in both military procurement and commercial aviation markets.
+### Northrop Grumman Corporation (NOC)
 
-#### i. **Huntington Ingalls Industries, Inc. (NYSE: HII)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Huntington Ingalls is the largest military shipbuilding company in the United States, constructing vessels for the Navy and Coast Guard. Their portfolio includes aircraft carriers, submarines, and amphibious assault ships.
-- **Significance:** HII's performance is closely tied to naval procurement budgets and maritime security initiatives.
+**Ticker:** NYSE:NOC
 
-#### j. **Oshkosh Corporation (NYSE: OSK)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Oshkosh manufactures specialty vehicles for defense, commercial, and municipal customers. Their defense vehicles are essential for ground operations and logistics support.
-- **Significance:** Oshkosh's focus on high-performance vehicles makes it a key supplier for military logistics and operational mobility.
+Northrop Grumman specializes in aerospace and defense technology. The company is a key player in unmanned systems, cyber, and space systems, contributing significantly to national security initiatives.
 
-#### k. **Leidos Holdings, Inc. (NYSE: LDOS)**
-- **Sector:** Information Technology & Defense
-- **Overview:** Leidos provides IT services, engineering, and scientific solutions to government and commercial clients. Their work spans defense, intelligence, civil, and health sectors.
-- **Significance:** Leidos' involvement in critical IT infrastructure and defense intelligence projects positions it as a vital player in national security and technological innovation.
+### Boeing Company (BA)
 
-#### l. **Kratos Defense & Security Solutions, Inc. (NASDAQ: KTOS)**
-- **Sector:** Aerospace & Defense
-- **Overview:** Kratos specializes in unmanned systems, electronic warfare, and satellite communications. They develop advanced drones and cybersecurity solutions for military applications.
-- **Significance:** Kratos' focus on unmanned and cyber technologies reflects the future direction of warfare and defense strategy.
+**Ticker:** NYSE:BA
 
-#### m. **Spirit AeroSystems Holdings, Inc. (NYSE: SPR)**
-- **Sector:** Aerospace
-- **Overview:** Spirit AeroSystems designs and builds aerostructures for commercial and defense aircraft. They are a major supplier for companies like Boeing and Airbus.
-- **Significance:** Spirit AeroSystems' performance indicates trends in commercial aircraft production and defense procurement.
+Boeing is a leading aerospace company and the world's largest manufacturer of commercial jetliners and military aircraft. Its defense division produces fighters, surveillance aircraft, and missile systems.
 
-#### n. **Pioneer Natural Resources Company (NYSE: PSN)**
-- **Sector:** Energy
-- **Overview:** Pioneer is engaged in hydrocarbon exploration in the United States, focusing on oil and natural gas production. Their operations are primarily in the Permian Basin.
-- **Significance:** As an energy sector player, Pioneer’s performance provides insights into oil and gas market dynamics, which can influence broader economic conditions.
+### Raytheon Technologies Corporation (RTX)
 
-#### o. **CACI International Inc (NYSE: CACI)**
-- **Sector:** Information Technology & Defense
-- **Overview:** CACI provides information solutions and services in the defense, intelligence, and federal civilian government sectors. Their offerings include cybersecurity, data analytics, and mission support.
-- **Significance:** CACI's role in national security and intelligence makes it a critical component of the defense technology landscape.
+**Ticker:** NYSE:RTX
 
-#### p. **ViaSat, Inc. (NASDAQ: VSAT)**
-- **Sector:** Telecommunications
-- **Overview:** ViaSat is a global communications company providing high-speed satellite broadband services and secure networking systems. They serve both commercial and government clients.
-- **Significance:** ViaSat's advancements in satellite communications are essential for modern defense operations and global connectivity.
+Raytheon Technologies is a major defense contractor and industrial corporation. It provides advanced systems and services for commercial, military, and government customers worldwide.
 
-### 2. **Economic Indicators**
+### General Dynamics Corporation (GD)
 
-#### a. **S&P 500 Index (SPX)**
-- **Overview:** The S&P 500 is a stock market index that measures the stock performance of 500 large companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices.
-- **Significance:** The SPX serves as a barometer for the overall health of the U.S. stock market and economy. Its performance reflects investor sentiment, economic growth, and corporate profitability.
+**Ticker:** NYSE:GD
 
-### 3. **Global Liquidity Index (GLI)**
-- **Overview:** The Global Liquidity Index aggregates data from various financial instruments and economic indicators to assess the liquidity conditions in the global markets. It considers factors like money supply (M2), bond yields, and currency valuations.
-- **Significance:** GLI provides insights into the availability of capital in the global economy, influencing investment flows, asset prices, and economic stability.
+General Dynamics is a global aerospace and defense company offering a broad portfolio of products and services in business aviation; combat vehicles, weapons systems, and munitions; IT services; and shipbuilding.
 
-### 4. **M2 Money Supply**
-- **Overview:** M2 is a measure of the money supply that includes cash, checking deposits, and easily convertible near money. It is an important indicator of economic activity and inflation.
-- **Significance:** Changes in M2 money supply can signal shifts in economic policy, consumer spending, and inflationary pressures. An increasing M2 typically indicates more liquidity in the economy, which can drive economic growth but also raise inflation concerns.
+### BAE Systems plc (BAESY)
 
-## How the War Index Works
+**Ticker:** OTC:BAESY
 
-The War Index (WRI) calculates a composite value based on the cumulative performance of the selected defense and aerospace stocks. By tracking the percentage change in each stock's closing price over a specified period, the index aggregates these movements to provide an overall trend forecast. Additionally, the index incorporates the correlation with the VIX (Volatility Index) and broader market indicators like the S&P 500 to adjust the trend forecast based on market volatility and liquidity conditions.
+BAE Systems is a British multinational defense, security, and aerospace company. It is one of the world's largest defense contractors, providing a range of products from naval ships to cybersecurity solutions.
 
-### Calculation Steps:
-1. **Percentage Change Calculation:** For each selected stock, the indicator calculates the daily percentage change in closing price.
-2. **Cumulative Performance:** These daily changes are compounded to derive a cumulative performance metric for each stock.
-3. **Average Variation:** The average of these cumulative performances is computed to represent the overall trend.
-4. **Global Liquidity Adjustment:** The index factors in the Global Liquidity Index and M2 Money Supply to adjust the trend forecast based on economic liquidity.
-5. **Correlation with VIX:** By analyzing the correlation with the VIX, the indicator accounts for market volatility in its trend forecast.
-6. **Final Trend Forecast:** The aggregated data is used to plot the War Index, providing a visual representation of market trends influenced by defense sector performance and economic conditions.
+### L3Harris Technologies, Inc. (LHX)
 
-## Importance for Traders and Analysts
+**Ticker:** NYSE:LHX
 
-- **Defense Sector Insights:** By focusing on major defense and aerospace stocks, the War Index offers specialized insights into a sector that is often influenced by government policies, international relations, and technological advancements.
-- **Economic Health Indicator:** Incorporating economic indicators like the Global Liquidity Index and M2 Money Supply allows traders to gauge broader economic conditions and liquidity trends.
-- **Market Volatility Consideration:** The correlation with the VIX ensures that the trend forecast accounts for prevailing market volatility, enhancing the reliability of trading signals.
-- **Informed Decision-Making:** Combining sector-specific performance with macroeconomic indicators provides a balanced view, enabling traders and analysts to make more informed investment decisions.
+L3Harris Technologies specializes in defense and other government services, focusing on surveillance solutions, communication systems, and electronic warfare technologies.
 
-## Conclusion
+### Textron Inc. (TXT)
 
-The **War Index (Approximated)** serves as a powerful tool for those interested in the defense and aerospace sectors, offering a nuanced view of market trends influenced by both industry-specific and macroeconomic factors. By integrating key stocks, economic indicators, and volatility measures, the War Index provides a comprehensive framework for analyzing market dynamics and forecasting future trends. Whether you're a trader seeking to capitalize on defense sector movements or an analyst monitoring economic liquidity, the War Index offers valuable insights to support your financial strategies.
+**Ticker:** NYSE:TXT
+
+Textron is a conglomerate with subsidiaries in aerospace, defense, and industrial products. It is known for brands like Bell Helicopter and Cessna, contributing to both civilian and military aviation.
+
+### Huntington Ingalls Industries, Inc. (HII)
+
+**Ticker:** NYSE:HII
+
+Huntington Ingalls is the largest military shipbuilding company in the United States. It designs, builds, and maintains ships for the U.S. Navy and Coast Guard.
+
+### Oshkosh Corporation (OSK)
+
+**Ticker:** NYSE:OSK
+
+Oshkosh Corporation manufactures specialty trucks and military vehicles. Its Defense segment provides tactical and logistical vehicles to U.S. and allied forces.
+
+### Leidos Holdings, Inc. (LDOS)
+
+**Ticker:** NYSE:LDOS
+
+Leidos is a defense, aviation, information technology, and biomedical research company. It provides scientific, engineering, systems integration, and technical services.
+
+### Kratos Defense & Security Solutions, Inc. (KTOS)
+
+**Ticker:** NASDAQ:KTOS
+
+Kratos specializes in unmanned systems, satellite communications, and cybersecurity. It delivers products and services to government and commercial customers.
+
+### Spirit AeroSystems Holdings, Inc. (SPR)
+
+**Ticker:** NYSE:SPR
+
+Spirit AeroSystems is a leading manufacturer of aerostructures for commercial and defense aircraft. It produces components like fuselages, pylons, and nacelles.
+
+### Parsons Corporation (PSN)
+
+**Ticker:** NYSE:PSN
+
+Parsons provides engineering, construction, technical, and management services. Its work includes critical infrastructure, cybersecurity, and defense systems.
+
+### CACI International Inc (CACI)
+
+**Ticker:** NYSE:CACI
+
+CACI offers information solutions and services in defense, intelligence, and federal civilian government sectors. Its expertise includes data analytics, cybersecurity, and mission support.
+
+### ViaSat, Inc. (VSAT)
+
+**Ticker:** NASDAQ:VSAT
+
+ViaSat provides high-speed satellite broadband services and secure networking systems. Its products support military communications and commercial aviation.
+
+## Purpose of the War Index
+
+The War Index serves several key purposes:
+
+- **Sector Performance Tracking:** By aggregating the performance of major defense and aerospace companies, the index provides a clear picture of the sector's overall health.
+- **Investment Analysis:** Investors can use the index to identify trends, evaluate sector strength, and make informed decisions regarding their portfolios.
+- **Comparative Benchmarking:** Comparing the War Index with broader market indices like the S&P 500 helps in understanding how the defense sector performs relative to the general market.
+
+## Comparison with the S&P 500
+
+The War Index is plotted alongside the S&P 500 (SPX) to offer a comparative analysis between the defense sector and the broader market. This comparison highlights the relative performance, volatility, and growth trends, enabling users to assess whether the defense sector is outperforming or underperforming in the current economic climate.
+
+## Usage
+
+The War Index is implemented as a Pine Script™ indicator for TradingView, allowing users to:
+
+- **Visualize Sector Performance:** Overlay the War Index on charts to see how the defense sector is moving over time.
+- **Analyze Trends:** Identify upward or downward trends within the defense sector and compare them with the S&P 500.
+- **Backtesting:** Utilize the built-in backtesting features to evaluate the historical performance of the War Index.
 
 ## License
 
-This project is licensed under the [Mozilla Public License 2.0](https://mozilla.org/MPL/2.0/).
+This project is licensed under the [Mozilla Public License 2.0](https://mozilla.org/MPL/2.0/). See the [LICENSE](LICENSE) file for details.
 
-## Author
+## Contributing
 
-- **RaineriGiuseppe**  
-  [GitHub Profile](https://github.com/RaineriGiuseppe)
+Contributions are welcome! If you have suggestions, improvements, or bug fixes, please open an issue or submit a pull request. Please ensure that your contributions adhere to the project's licensing terms.
 
 ---
-*For contributions, issue reporting, or enhancement suggestions, please visit the [GitHub repository](https://github.com/RaineriGiuseppe/War-Index-Approximated).*
+
+*Disclaimer: This War Index is an approximated indicator intended for informational purposes only. It should not be construed as investment advice. Always conduct your own research or consult with a financial advisor before making investment decisions.*
+
