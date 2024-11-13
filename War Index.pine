@@ -2,7 +2,7 @@
 // © RaineriGiuseppe
 
 //@version=5
-indicator("War Index (Approximated)")
+indicator("War Index")
 // <===> <--backtesting--> <===>
 i_from = input.time(defval = timestamp("01 Jan 2018 00:00 +0000"), title = "From")
 i_thru = input.time(defval = timestamp("01 Mar 2025 00:00 +0000"), title = "Thru")
@@ -121,3 +121,21 @@ SPX = percwor(SPXclose)
 
 plot(date() ? wri : na, color= color.red, title = "WRI")
 plot(date() ? SPX : na, color = color.blue, title = "SPX")
+
+var line ema1Line = line.new(bar_index, high, bar_index + 3, high, xloc.bar_index, extend.none, na, line.style_solid, 1) 
+var line ema2Line = line.copy(ema1Line)
+
+var label ema1Label = label.new(bar_index, high, "Test", style=label.style_none)
+var label ema2Label = label.copy(ema1Label)
+
+EmaDisplay(float ema, string maType, color _color, line _line, label _label, float data, bool cond) =>
+    if cond
+        line.set_xy1(_line, bar_index, ema)
+        line.set_xy2(_line, bar_index + 1, ema)
+        line.set_color(_line, _color)
+        label.set_text(_label, maType+" "+str.tostring(math.round(data,2)))
+        label.set_xy(_label, bar_index + 5, ema)
+        label.set_textcolor(_label, _color)
+
+EmaDisplay(wri, "War Index", color.red, ema1Line, ema1Label,wri,true)
+EmaDisplay(SPX, "SPX", color.blue, ema2Line, ema2Label,SPX,true)
