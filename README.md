@@ -1,4 +1,6 @@
-# War Index
+# [War Index](https://www.tradingview.com/script/PKSJoBWc-War-Index/)
+
+[TradingView Link](https://www.tradingview.com/script/PKSJoBWc-War-Index/)
 
 ## Table of Contents
 
