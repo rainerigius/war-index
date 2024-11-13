@@ -1,6 +1,4 @@
-# War Index (Approximated)
-
-![War Index Banner](https://example.com/banner-image.png)
+# War Index
 
 ## Table of Contents
 
