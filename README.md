@@ -30,7 +30,7 @@
 
 ## Introduction
 
-Welcome to the **War Index (Approximated)** repository! This project aims to provide traders, investors, and analysts with a specialized financial indicator that tracks the performance of key defense and aerospace companies. By aggregating the percentage changes of selected stocks, the War Index offers insights into the defense sector's dynamics and its relationship with the broader market.
+Welcome to the **War Index** repository! This project aims to provide traders, investors, and analysts with a specialized financial indicator that tracks the performance of key defense and aerospace companies. By aggregating the percentage changes of selected stocks, the War Index offers insights into the defense sector's dynamics and its relationship with the broader market.
 
 ## What is the War Index?
 
